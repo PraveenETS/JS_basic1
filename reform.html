@@ -10,7 +10,7 @@
 <body>
     <div class="container col-lg-7">
     <br><h1 class="text-center text-center text-success ">This is JS Form</h1><br>
-            <form class="bg-light" onsubmit="return validation()">
+            <form name="forms" class="bg-light" onsubmit="return validation()">
 
                 <div class="ss container col-md-8 offset-md-2"><br>
                     <label>User Name:</label>
@@ -29,7 +29,7 @@
                     <label for="male">Male</label>
                     <input type="radio" id="male" name="gender" value="male"><br>
                     <label for="female">Female</label>
-                    <input type="radio" id="female" name="gender" value="female">
+                    <input type="radio" id="female" name="gender" value="female"><br>
                     <span id="egen" class="text-danger"></span>
                 </div>
                 <br>
@@ -40,39 +40,43 @@
                 </div>
 
                 <div class="ss container col-md-8 offset-md-2">
-                    <label>Hobby:</label><br>
+                    <label>Hobby:</label>              
+                     <span id="eAddress" class="text-danger"></span><br>
+
                     <div class="row">
                         <div class="col">
-                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <input type="checkbox" id="vehicle1" name="vehicle" value="Bike">
                             <label for="vehicle1"> I have a bike</label><br>
-                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            <input type="checkbox" id="vehicle2" name="vehicle" value="Car">
                             <label for="vehicle2"> I have a car</label><br>
-                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                            <label for="vehicle1"> I have a bike</label><br>
-                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                            <label for="vehicle2"> I have a car</label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle" value="Cycle">
+                            <label for="vehicle1"> I have a cycle</label><br>
+                            <input type="checkbox" id="vehicle4" name="vehicle" value="Scooter">
+                            <label for="vehicle2"> I have a scooter</label><br>
                         </div>
                         <div class="col">
-                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                            <label for="vehicle1"> I have a bike</label><br>
-                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                            <label for="vehicle2"> I have a car</label><br>
-                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                            <input type="checkbox" id="vehicle5" name="vehicle" value="Leg">
+                            <label for="vehicle1"> I have a leg</label><br>
+                            <input type="checkbox" id="vehicle6" name="vehicle" value="Bag">
+                            <label for="vehicle2"> I have a bag</label><br>
+                            <input type="checkbox" id="vehicle7" name="vehicle" value="Boat">
                             <label for="vehicle3"> I have a boat</label><br>
-                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                            <label for="vehicle3"> I have a boat</label>
+                            <input type="checkbox" id="vehicle8" name="vehicle" value="Bus">
+                            <label for="vehicle3"> I have a bus</label>
                         </div>
                     </div>
+                <span id="ehob" class="text-danger"></span><br>
+
                     <br><br>
                 </div>
 
                 <div class="container col-md-8 offset-md-2">
                     <label for="fname">your address:</label><br>
-                <textarea name="address" rows="3" cols="50" class="form-control">your home address</textarea>
+                <textarea id="myadd" name="address" rows="3" cols="50"  maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
                 <span id="eAddress" class="text-danger"></span><br>
 
                 <div class="text-center col-md-8 offset-md-2">
-                    <br><input type="submit" value="submit" class="btn btn-success" ><br>
+                    <br><input type="submit" value="submit" class="btn btn-success" id="btn"><br>
                 </div><br>
                 </div>
             </form>
